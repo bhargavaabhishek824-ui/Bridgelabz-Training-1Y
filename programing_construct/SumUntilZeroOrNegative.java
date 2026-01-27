@@ -1,0 +1,24 @@
+package programing_construct;
+
+import java.util.Scanner;
+
+class SumUntilZeroOrNegative {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double total = 0.0;
+
+        while (true) {
+            System.out.print("Enter a number (0 or negative to stop): ");
+            double number = sc.nextDouble();
+
+            if (number <= 0) {
+                break;   // exit loop
+            }
+
+            total = total + number;
+        }
+
+        System.out.println("Total sum = " + total);
+    }
+}
